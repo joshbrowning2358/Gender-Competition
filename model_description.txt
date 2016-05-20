@@ -1,0 +1,4 @@
+Model Description:
+1: Naive Bayes model.  Using the variables "BRANDID", 'device_operatingSystem', 'device_browser', 'PRODUCTGROUPID'.  The cross-validated AUC score is around 0.65, Andres scored it at 0.64139.
+2: Naive Bayes model.  Used all the variables, with the minor exception of creating a time by adding the hour and minute column.  Additionally, in this model I implemented the maxRatio and set it to 100.  The cross-validated AUC score is around 0.68, Andres scored it at 0.6570.
+3: GBM. I used all the variables, but reduced the categories to just 52 per variable (a constraint imposed by random forest).  The cross-validated AUC (via date CV) is around 0.635, Andres scored it as 0..
